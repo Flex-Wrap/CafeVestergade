@@ -2,6 +2,33 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+body{
+    background-color: #265847;
+}
+
 h1 {
     font-family: "Montserrat", sans-serif;
+}
+
+/* Menu Items */
+
+.menu_item{
+    width: 260px;
+}
+
+.menu_item_description{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item_description h3{
+    font-family: "Montserrat", sans-serif;
+}
+
+#gingerbeer_img{
+    background-image: url(../resources/ginger_beer.jpg);
+    width: 260px;
+    height: 260px;
+    background-position: center;
+    background-size: cover;
 }
