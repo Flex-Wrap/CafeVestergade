@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-body{
-    background-color: #265847;
+body {
+  background-color: #265847;
 }
 
 h1 {
@@ -15,10 +15,10 @@ h1 {
 /*Hero screen*/
 #hero_screen {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 0 50px 64px 50px;
   gap: 36px;
   height: 408px;
   background-image: url(../resources/hero\ image.png);
@@ -29,11 +29,12 @@ h1 {
 
 #hero_screen h1 {
   color: #ffffff;
+  text-align: center;
 }
 
 #hero_screen button {
   font-size: 16px;
-  padding: 8px 20px;
+  padding: 8px 24px;
   background-color: transparent;
   border-radius: 100px;
   color: #ffffff;
@@ -42,23 +43,23 @@ h1 {
 
 /* Menu Items */
 
-.menu_item{
-    width: 260px;
+.menu_item {
+  width: 260px;
 }
 
-.menu_item_description{
-    display: flex;
-    justify-content: space-between;
+.menu_item_description {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu_item_description h3{
-    font-family: "Montserrat", sans-serif;
+.menu_item_description h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
-#gingerbeer_img{
-    background-image: url(../resources/ginger_beer.jpg);
-    width: 260px;
-    height: 260px;
-    background-position: center;
-    background-size: cover;
+#gingerbeer_img {
+  background-image: url(../resources/ginger_beer.jpg);
+  width: 260px;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
 }
