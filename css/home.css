@@ -1,3 +1,17 @@
+:root {
+  --primary-color: #265847; /* Background color for body */
+  --secondary-color: #ffedd2; /* Light cream color */
+  --text-color: #808f85; /* Grayish text color */
+  --button-border-color: #ffffff; /* White border for buttons */
+  --button-bg-color: transparent; /* Transparent button background */
+  --event-bg-color: rgba(36, 9, 9, 0.89); /* Background for event date */
+  --image-bg-color: #0a1a143d; /* Transparent overlay for images */
+  --navbar-bg-color: rgba(38, 88, 71, 0.9); /* Navbar background */
+  --navbar-link-hover-color: #ddd; /* Hover color for navbar links */
+  --select-bg-color: rgb(65, 3, 3); /* Background for language selector */
+  --scrollbar-color: transparent; /* Scrollbar color */
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -5,12 +19,12 @@
 }
 
 body {
-  background-color: #265847;
+  background-color: var(--primary-color);
 }
 
 h2 {
   font-family: "El Messiri", sans-serif;
-  color: #ffedd2;
+  color: var(--secondary-color);
   font-size: 20px;
 }
 
@@ -19,7 +33,7 @@ h1 {
 }
 
 p {
-  color: #808f85;
+  color: var(--text-color);
 }
 
 section {
@@ -47,17 +61,17 @@ section {
 }
 
 #hero_screen h1 {
-  color: #ffffff;
+  color: var(--button-border-color);
   text-align: center;
 }
 
 #hero_screen button {
   font-size: 16px;
   padding: 8px 24px;
-  background-color: transparent;
+  background-color: var(--button-bg-color);
   border-radius: 100px;
-  color: #ffffff;
-  border: #ffffff solid 1px;
+  color: var(--button-border-color);
+  border: var(--button-border-color) solid 1px;
 }
 /*Hero screen end*/
 
@@ -66,10 +80,10 @@ section {
 .soon_events button {
   font-size: 16px;
   padding: 8px 16px;
-  background-color: transparent;
+  background-color: var(--button-bg-color);
   border-radius: 100px;
-  color: #ffffff;
-  border: #ffffff solid 1px;
+  color: var(--button-border-color);
+  border: var(--button-border-color) solid 1px;
   position: absolute;
   bottom: 12px;
   right: 12px;
@@ -90,8 +104,8 @@ section {
   position: absolute;
   top: 24px;
   left: 12px;
-  background-color: rgba(36, 9, 9, 0.89);
-  color: #ffffff;
+  background-color: var(--event-bg-color);
+  color: var(--button-border-color);
   padding: 6px 12px;
   border-radius: 0 0 10px 10px;
   font-size: 14px;
@@ -104,17 +118,17 @@ section {
 
 .scroll_container {
   display: flex;
-  gap: 10px; /* Adds spacing between the items */
-  overflow-x: auto; /* Enables horizontal scrolling */
-  padding-bottom: 10px; /* Adds some padding at the bottom */
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
 }
 
 .scroll_container::-webkit-scrollbar {
-  display: none; /* Optional: Hides the scrollbar */
+  display: none;
 }
 
 .menu_item {
-  flex-shrink: 0; /* Prevents items from shrinking */
+  flex-shrink: 0;
   width: 260px;
 }
 
@@ -124,18 +138,18 @@ section {
 }
 
 .menu_item_description h3 {
-  color: #808f85;
+  color: var(--text-color);
 }
 
 .menu_item_description h4 {
-  color: #ffedd2;
+  color: var(--secondary-color);
   margin-right: 8px;
 }
 
 .menu_item_img {
   width: 260px;
   height: 250px;
-  background-color: #0a1a143d;
+  background-color: var(--image-bg-color);
 }
 
 .favourites h2 {
@@ -148,35 +162,33 @@ section {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  backdrop-filter: blur(3px); 
+  backdrop-filter: blur(3px);
   padding: 10px;
-  position: fixed; /* Locks the navbar at the top */
-  top: 0; /* Sticks it to the top */
-  width: 100%; /* Ensures the navbar spans the full width of the screen */
-  z-index: 1000; /* Ensures the navbar stays on top of other content */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   box-sizing: border-box;
   height: 60px;
-  
-  
 }
 
 .brand-logo img {
-  width: 160px; 
-  height: auto;  
+  width: 160px;
+  height: auto;
   padding-left: 40px;
 }
 
 .language-selector {
-  margin-right: 2px; /* Space between the language selector and the burger menu */
+  margin-right: 2px;
 }
 
 .language-selector select {
   padding: 5px;
-  font-size: 1rem; 
-  border: none; 
-  border-radius: 4px; 
-  background-color: rgb(65, 3, 3); 
-  color: #FFEDD2; 
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--select-bg-color);
+  color: var(--secondary-color);
 }
 
 /* Hamburger Menu */
@@ -191,7 +203,7 @@ section {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #FFEDD2;
+  background-color: var(--secondary-color);
   border-radius: 10px;
 }
 
@@ -201,14 +213,15 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar-links.active {
-  display: flex; 
-  position: absolute; 
-  top: 60px; 
-  left: 0; 
-  width: 100%; 
-  background-color: rgba(38, 88, 71, 0.9);
-  flex-direction: column; 
+  display: flex;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: var(--navbar-bg-color);
+  flex-direction: column;
 }
 
 .navbar-links ul {
@@ -224,48 +237,48 @@ section {
 
 .navbar-links ul li a {
   text-decoration: none;
-  color: #FFEDD2;
+  color: var(--secondary-color);
   font-size: 1rem;
 }
 
 .navbar-links ul li a:hover {
-  color: #ddd;
-}
-.content {
-  padding-top: 70px; /* Ensure content starts below the navbar */
-padding-left: 20px;
-padding-right: 20px;
+  color: var(--navbar-link-hover-color);
 }
 
+.content {
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 @media (max-width: 768px) {
   .toggle-button {
-      display: flex;
+    display: flex;
   }
 
   .navbar-links {
-      display: none;
-      width: 100%;
+    display: none;
+    width: 100%;
   }
 
   .navbar-links ul {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .navbar-links ul li {
-      text-align: center;
-      width: 100%;
-      margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
   }
 
   .navbar-links ul li a {
-      font-size: 1.2rem;
-      padding: 10px;
-      display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
   }
 
   .navbar-links.active {
-      display: flex;
+    display: flex;
   }
 }
