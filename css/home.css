@@ -1,57 +1,35 @@
 * {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    
+body {
+  background-color: #265847;
 }
 
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    backdrop-filter: blur(3px); 
-    padding: 10px;
-    position: fixed; /* Locks the navbar at the top */
-    top: 0; /* Sticks it to the top */
-    width: 100%; /* Ensures the navbar spans the full width of the screen */
-    z-index: 1000; /* Ensures the navbar stays on top of other content */
-    box-sizing: border-box;
-    height: 60px;
-    
-    
+h2 {
+  font-family: "El Messiri", sans-serif;
+  color: #ffedd2;
+  font-size: 20px;
 }
 
-.brand-logo img {
-    width: 160px; /* Adjust the width to fit your needs */
-    height: auto;  /* Keeps the aspect ratio */
-    padding-left: 40px;
-}
-/* Language Selector Styles */
-.language-selector {
-    margin-right: 2px; /* Space between the language selector and the burger menu */
+h1 {
+  font-family: "El Messiri", sans-serif;
 }
 
-.language-selector select {
-    padding: 5px;
-    font-size: 1rem; /* Adjust font size as needed */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Add some rounding */
-    background-color: rgb(65, 3, 3); /* Background color for the dropdown */
-    color: #FFEDD2; /* Text color */
+p {
+  color: #808f85;
+}
+
 section {
   padding: 20px;
   margin-bottom: 60px;
 }
 
 /*Hero screen*/
-.hero{
-    padding: 0;
+.hero {
+  padding: 0;
 }
 
 #hero_screen {
@@ -93,8 +71,8 @@ section {
   color: #ffffff;
   border: #ffffff solid 1px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 12px;
+  right: 12px;
 }
 
 #music_event_card {
@@ -105,55 +83,56 @@ section {
   height: 262px;
   width: 100%;
   display: block;
+  padding-top: 16px;
 }
 
 .event_date {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  top: 16px;
+  left: 12px;
+  background-color: rgba(36, 9, 9, 0.89);
   color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 0 0 10px 10px;
   font-size: 14px;
+  font-family: "El Messiri", sans-serif;
 }
 
 /*Soon events screen end*/
 
 /* Menu Items */
-  
+
 .scroll_container {
-display: flex;
-gap: 10px; /* Adds spacing between the items */
-overflow-x: auto; /* Enables horizontal scrolling */
-padding-bottom: 10px; /* Adds some padding at the bottom */
+  display: flex;
+  gap: 10px; /* Adds spacing between the items */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  padding-bottom: 10px; /* Adds some padding at the bottom */
 }
 
 .scroll_container::-webkit-scrollbar {
-display: none; /* Optional: Hides the scrollbar */
+  display: none; /* Optional: Hides the scrollbar */
 }
 
 .menu_item {
-flex-shrink: 0; /* Prevents items from shrinking */
-width: 260px;
+  flex-shrink: 0; /* Prevents items from shrinking */
+  width: 260px;
 }
 
 .menu_item_description {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu_item_description h3 {
-color: #808f85;
+  color: #808f85;
 }
 
 .menu_item_description h4 {
-color: #FFEDD2;
+  color: #ffedd2;
 }
 
 .menu_item_img {
-width: 260px;
-height: 250px;
-background-color: #0a1a143d;
+  width: 260px;
+  height: 250px;
+  background-color: #0a1a143d;
 }
-  
