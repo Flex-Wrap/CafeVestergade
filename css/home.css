@@ -1,0 +1,111 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+header .logo a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Section 1 */
+.section-1 {
+    background: #fff;
+    padding: 2em 0;
+}
+
+.section-1 .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+/* Section 2 */
+.section-2 {
+    background: #eaeaea;
+    padding: 2em 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
