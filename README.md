@@ -7,7 +7,8 @@ The pages were delegated as follows:
 - Home Page: Yulia
 - Boardgames Page: Lesy
 - Menu Page: Larissa
-- Navigation Bar: Donika
+- Navigation Bar: Hunter
 - Event Page: Hunter
+- Footer: Donika
 
 The solution is coded using solely html, css and javascript.
