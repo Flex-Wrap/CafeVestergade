@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,11 +8,26 @@ body {
   background-color: #265847;
 }
 
+h2 {
+  font-family: "El Messiri", sans-serif;
+  color: #ffedd2;
+  font-size: 20px;
+}
+
 h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "El Messiri", sans-serif;
+}
+
+p {
+  color: #808f85;
+}
+
+section {
+  margin-bottom: 60px;
 }
 
 /*Hero screen*/
+
 #hero_screen {
   display: flex;
   justify-content: end;
@@ -40,6 +55,7 @@ h1 {
   color: #ffffff;
   border: #ffffff solid 1px;
 }
+/*Hero screen end*/
 
 /* Menu Items */
 
@@ -52,13 +68,13 @@ h1 {
   justify-content: space-between;
 }
 
-.menu_item_description h3{
-    font-family: "Montserrat", sans-serif;
-    color: #808F85;
+.menu_item_description h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #808f85;
 }
 
-.menu_item_img{
-    width: 260px;
-    height: 260px;
-    background-color: transparent;
+.menu_item_img {
+  width: 260px;
+  height: 260px;
+  background-color: transparent;
 }
