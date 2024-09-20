@@ -7,8 +7,14 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+/*Hero screen*/
 #hero_screen {
   background-image: url(../resources/hero\ image.png);
   background-size: cover;
   background-position: center top;
+}
+
+#hero_screen {
+  display: flexbox;
+  justify-content: center;
 }
