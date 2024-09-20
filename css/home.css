@@ -44,97 +44,116 @@ body, html {
     border-radius: 4px; /* Add some rounding */
     background-color: rgb(65, 3, 3); /* Background color for the dropdown */
     color: #FFEDD2; /* Text color */
+section {
+  padding: 20px;
+  margin-bottom: 60px;
 }
 
-/* Hamburger Menu (Toggle Button) */
-.toggle-button {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #FFEDD2;
-    border-radius: 10px;
-}
-
-/* Navbar Links */
-.navbar-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-links.active {
-    display: flex; /* Show the navbar links when active */
-    position: absolute; /* Positioning to remove it from the normal flow */
-    top: 60px; /* Position just below the navbar */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    background-color: rgba(38, 88, 71, 0.9); /* Optional: add a background color */
-    flex-direction: column; /* Stack items vertically */
-}
-
-.navbar-links ul {
-    list-style: none;
+/*Hero screen*/
+.hero{
     padding: 0;
-    margin: 0;
-    display: flex;
 }
 
-.navbar-links ul li {
-    margin-left: 20px;
+#hero_screen {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px 64px 50px;
+  gap: 36px;
+  height: 408px;
+  background-image: url(../resources/hero\ image.png);
+  background-size: cover;
+  background-position: center top;
+  position: relative;
 }
 
-.navbar-links ul li a {
-    text-decoration: none;
-    color: #FFEDD2;
-    font-size: 1rem;
+#hero_screen h1 {
+  color: #ffffff;
+  text-align: center;
 }
 
-.navbar-links ul li a:hover {
-    color: #ddd;
+#hero_screen button {
+  font-size: 16px;
+  padding: 8px 24px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: #ffffff;
+  border: #ffffff solid 1px;
 }
-.content {
-    padding-top: 70px; /* Ensure content starts below the navbar */
-padding-left: 20px;
-padding-right: 20px;
+/*Hero screen end*/
+
+/*Soon events screen*/
+
+.soon_events button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: #ffffff;
+  border: #ffffff solid 1px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .toggle-button {
-        display: flex;
-    }
+#music_event_card {
+  position: relative;
+}
 
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
+#music_event_card img {
+  height: 262px;
+  width: 100%;
+  display: block;
+}
 
-    .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
+.event_date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 
-    .navbar-links ul li {
-        text-align: center;
-        width: 100%;
-        margin: 10px 0;
-    }
+/*Soon events screen end*/
 
-    .navbar-links ul li a {
-        font-size: 1.2rem;
-        padding: 10px;
-        display: block;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
+/* Menu Items */
   
-    
+.scroll_container {
+display: flex;
+gap: 10px; /* Adds spacing between the items */
+overflow-x: auto; /* Enables horizontal scrolling */
+padding-bottom: 10px; /* Adds some padding at the bottom */
 }
+
+.scroll_container::-webkit-scrollbar {
+display: none; /* Optional: Hides the scrollbar */
+}
+
+.menu_item {
+flex-shrink: 0; /* Prevents items from shrinking */
+width: 260px;
+}
+
+.menu_item_description {
+display: flex;
+justify-content: space-between;
+}
+
+.menu_item_description h3 {
+color: #808f85;
+}
+
+.menu_item_description h4 {
+color: #FFEDD2;
+}
+
+.menu_item_img {
+width: 260px;
+height: 250px;
+background-color: #0a1a143d;
+}
+  
