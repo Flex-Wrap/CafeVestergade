@@ -147,7 +147,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(39, 37, 37, 0.7); 
   backdrop-filter: blur(3px); 
   padding: 10px;
   position: fixed; /* Locks the navbar at the top */
