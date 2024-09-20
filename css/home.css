@@ -12,6 +12,18 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  color: #ffedd2;
+  font-size: 20px;
+}
+
+p {
+  color: #808f85;
+}
+
+section {
+  margin-bottom: 60px;
+}
 /*Hero screen*/
 #hero_screen {
   display: flex;
