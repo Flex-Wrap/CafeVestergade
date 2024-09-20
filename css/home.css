@@ -36,12 +36,11 @@ h1 {
 
 .menu_item_description h3{
     font-family: "Montserrat", sans-serif;
+    color: #808F85;
 }
 
-#gingerbeer_img{
-    background-image: url(../resources/ginger_beer.jpg);
+.menu_item_img{
     width: 260px;
     height: 260px;
-    background-position: center;
-    background-size: cover;
+    background-color: transparent;
 }
