@@ -154,6 +154,7 @@ section:not(.story, .hero) {
   width: 260px;
   height: 250px;
   background-color: var(--image-bg-color);
+  object-fit: contain;
 }
 
 .favourites h2 {
@@ -165,7 +166,7 @@ section:not(.story, .hero) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(39, 37, 37, 0.7); 
+  background-color: rgba(39, 37, 37, 0.7);
   backdrop-filter: blur(3px);
   padding: 10px;
   position: fixed;
