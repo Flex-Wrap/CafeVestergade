@@ -83,12 +83,12 @@ section {
   height: 262px;
   width: 100%;
   display: block;
-  padding-top: 16px;
+  padding-top: 24px;
 }
 
 .event_date {
   position: absolute;
-  top: 16px;
+  top: 24px;
   left: 12px;
   background-color: rgba(36, 9, 9, 0.89);
   color: #ffffff;
@@ -129,10 +129,15 @@ section {
 
 .menu_item_description h4 {
   color: #ffedd2;
+  margin-right: 8px;
 }
 
 .menu_item_img {
   width: 260px;
   height: 250px;
   background-color: #0a1a143d;
+}
+
+.favourites h2 {
+  margin-bottom: 24px;
 }
