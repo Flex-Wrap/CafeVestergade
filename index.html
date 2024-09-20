@@ -5,100 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Café Vestergade</title>
     <link rel="stylesheet" href="css/home.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">Cafe Vestergade</a>
-          <!-- Link back to the homepage -->
+      <nav class="navbar">
+        <div class="brand-logo">
+          <a href="index.html">
+            <img src="resources/cafe vestergade_logo_no numbers_cream.png" alt="logo">
+          </a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/MenuPage.html">Menu</a></li>
-            <li><a href="pages/EventPage.html">Events</a></li>
-            <li><a href="pages/BoardgamePage.html">Boardgames</a></li>
-          </ul>
-        </nav>
+        <!-- Language Selection -->
+        <div class="language-selector">
+          <select id="language" onchange="changeLanguage()">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <!-- Add more languages as needed -->
+          </select>
       </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div id="hero_screen">
-          <h1>IT'S NOT ABOUT PLACE, IT'S ABOUT PEOPLE</h1>
-          <button>Book a table</button>
-        </div>
-      </section>
-
-      <section class="soon_events">
-        <div>
-          <h2>MUSIC EVENING IN CAFEÉ</h2>
-          <p>
-            You can enjoy the perfect Friday evening with our free music event
-            in our café
-          </p>
-          <div class="event_card" id="music_event_card">
-            <span class="event_date">08 november</span>
-            <img src="resources/music event.jpg" alt="Music Event image" />
-            <button>Details</button>
+          <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+          <div class="navbar-links" id="navbarLinks">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/MenuPage.html">Menu</a></li>
+                <li><a href="pages/EventPage.html">Events</a></li>
+                <li><a href="pages/BoardgamePage.html">Boardgames</a></li>
+            
+              </ul>
           </div>
-        </div>
-      </section>
+      </nav>
+  </header>
 
-      <section class="favourites">
-        <h2>FAVOURITES</h2>
-        <div class="scroll_container">
-            <div class="menu_item">
-                <img src="resources/ginger_beer.png" class="menu_item_img">
-                <div class="menu_item_description">
-                    <h3>Ginger beer</h3>
-                    <h4>45 kr</h4>
-                </div>
-            </div>
-    
-            <div class="menu_item">
-              <img src="resources/ginger_beer.png" class="menu_item_img">
-                <div class="menu_item_description">
-                    <h3>Latte</h3>
-                    <h4>50 kr</h4>
-                </div>
-            </div>
-    
-            <div class="menu_item">
-              <img src="resources/ginger_beer.png" class="menu_item_img">
-                <div class="menu_item_description">
-                    <h3>Ceres</h3>
-                    <h4>30 kr</h4>
-                </div>
-            </div>
-    
-            <!-- Add more menu items as needed -->
-        </div>
-    </section>
-    
+<div class="content">
+      <main>
+        <section class="hero">
+          <div>
+            <h1>It's not about place, it's about people</h1>
+            <a href="contact.html" class="btn">Book a table</a>
+          </div>
+        </section>
+  
+        <section class="soon_events">
+          <div>
+            <h2>Music evening in café</h2>
+            <p>
+              You can enjoy the perfect Friday evening with our free music event
+              in our café
+            </p>
+            <div class="event_card" id="music_event_card">
+              <button>Details</button>
 
-      <section class="story">
-        <div>
-          <h2>STORY</h2>
-          <p>
-            "For 25 years, our café has been a cozy spot where friends gather,
-            stories unfold, and every cup of coffee is brewed with passion.
-            We’re proud to serve our community with warmth and tradition that
-            keeps our doors open year after year."
-          </p>
-        </div>
-      </section>
-    </main>
+            </div>
+          </div>
+        </section>
+
+        <section class="favourites">
+          <h2>Favourites</h2>
+          <div class="menu_item">
+            <div id="gingerbeer_img">
+
+            </div>
+            <div class="menu_item_description">
+              <h3>Ginger beer</h3>
+              <h4>45 kr</h4>
+            </div>
+            
+
+          </div>
+        </section>
+  
+        <section class="story">
+          <div>
+            <h2>Story</h2>
+            <p>
+              "For 25 years, our café has been a cozy spot where friends gather,
+              stories unfold, and every cup of coffee is brewed with passion.
+              We’re proud to serve our community with warmth and tradition that
+              keeps our doors open year after year."
+            </p>
+          </div>
+        </section>
+      </main>
+  
 
     <footer>
       <div class="container">
@@ -112,5 +105,7 @@
         </nav>
       </div>
     </footer>
+</div>
+    <script src="javascript.js"></script>
   </body>
 </html>
