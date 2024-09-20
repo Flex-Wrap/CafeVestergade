@@ -8,4 +8,6 @@ h1 {
 
 #hero_screen {
   background-image: url(../resources/hero\ image.png);
+  background-size: cover;
+  background-position: center top;
 }
