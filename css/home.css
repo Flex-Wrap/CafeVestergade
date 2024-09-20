@@ -58,6 +58,7 @@ section {
 /*Hero screen end*/
 
 /*Soon events screen*/
+
 .soon_events button {
   font-size: 16px;
   padding: 8px 16px;
@@ -66,6 +67,12 @@ section {
   color: #ffffff;
   border: #ffffff solid 1px;
 }
+
+#music_event_card img {
+  height: 262px;
+  width: 100%;
+}
+
 /*Soon events screen end*/
 
 /* Menu Items */
