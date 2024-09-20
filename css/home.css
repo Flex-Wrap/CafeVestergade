@@ -79,14 +79,17 @@ section:not(.story, .hero) {
 }
 
 #roundbutton{
-  height: 48px;
-  width: 48px;
+  height: 60px;
+  width: 60px;
   background-color: var(--primary-color);
   border-radius: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   font-size: 42px;
   color: var(--secondary-color);
+  text-align: center;
+  box-shadow: none;
+  border: none;
 }
 /*Hero screen end*/
 
