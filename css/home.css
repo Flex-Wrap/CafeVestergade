@@ -36,8 +36,12 @@ p {
   color: var(--text-color);
 }
 
-section {
+section:not(.story, .hero) {
   padding: 20px;
+  margin-bottom: 60px;
+}
+
+.hero {
   margin-bottom: 60px;
 }
 
@@ -254,9 +258,12 @@ section {
 @media (max-width: 768px) {
   .toggle-button {
     display: flex;
+    display: flex;
   }
 
   .navbar-links {
+    display: none;
+    width: 100%;
     display: none;
     width: 100%;
   }
@@ -264,9 +271,14 @@ section {
   .navbar-links ul {
     flex-direction: column;
     width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .navbar-links ul li {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
     text-align: center;
     width: 100%;
     margin: 10px 0;
@@ -276,9 +288,51 @@ section {
     font-size: 1.2rem;
     padding: 10px;
     display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
   }
 
   .navbar-links.active {
     display: flex;
+    display: flex;
   }
+}
+
+/* Story section styles */
+
+.story {
+  text-align: center;
+}
+
+.story h2 {
+  text-align: center; /* Center the title */
+}
+
+.story p {
+  text-align: left;
+  max-width: 800px;
+  margin: 20px; /* Center text paragraphs */
+}
+
+/* Carousel Styles */
+.carousel_container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel_slide {
+  display: none;
+}
+
+.carousel_slide img {
+  width: cover;
+  height: 291px; /* Full screen */
+}
+
+/* Show the first slide */
+.active {
+  display: block;
 }
