@@ -1,10 +1,11 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  padding: none;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #265847;
+body {
+  background-color: #265847;
 }
 
 h1 {
@@ -13,25 +14,42 @@ h1 {
 
 /*Hero screen*/
 #hero_screen {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px 64px 50px;
+  gap: 36px;
+  height: 408px;
   background-image: url(../resources/hero\ image.png);
   background-size: cover;
   background-position: center top;
+  position: relative;
 }
 
-#hero_screen {
-  display: flexbox;
-  justify-content: center;
+#hero_screen h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#hero_screen button {
+  font-size: 16px;
+  padding: 8px 24px;
+  background-color: transparent;
+  border-radius: 100px;
+  color: #ffffff;
+  border: #ffffff solid 1px;
 }
 
 /* Menu Items */
 
-.menu_item{
-    width: 260px;
+.menu_item {
+  width: 260px;
 }
 
-.menu_item_description{
-    display: flex;
-    justify-content: space-between;
+.menu_item_description {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu_item_description h3{
