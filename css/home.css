@@ -69,13 +69,24 @@ section:not(.story, .hero) {
   text-align: center;
 }
 
-#hero_screen button {
+#hero_screen button:not(#roundbutton) {
   font-size: 16px;
   padding: 8px 24px;
   background-color: var(--button-bg-color);
   border-radius: 100px;
   color: var(--button-border-color);
   border: var(--button-border-color) solid 1px;
+}
+
+#roundbutton{
+  height: 48px;
+  width: 48px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 42px;
+  color: var(--secondary-color);
 }
 /*Hero screen end*/
 
