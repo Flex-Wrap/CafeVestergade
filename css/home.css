@@ -23,10 +23,14 @@ p {
 }
 
 section {
-  margin-bottom: 60px;
+    padding: 20px;
+    margin-bottom: 60px;
 }
 
 /*Hero screen*/
+.hero{
+    padding: 0;
+}
 
 #hero_screen {
   display: flex;
@@ -58,23 +62,39 @@ section {
 /*Hero screen end*/
 
 /* Menu Items */
+  
+.scroll_container {
+display: flex;
+gap: 10px; /* Adds spacing between the items */
+overflow-x: auto; /* Enables horizontal scrolling */
+padding-bottom: 10px; /* Adds some padding at the bottom */
+}
+
+.scroll_container::-webkit-scrollbar {
+display: none; /* Optional: Hides the scrollbar */
+}
 
 .menu_item {
-  width: 260px;
+flex-shrink: 0; /* Prevents items from shrinking */
+width: 260px;
 }
 
 .menu_item_description {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
 .menu_item_description h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #808f85;
+color: #808f85;
+}
+
+.menu_item_description h4 {
+color: #FFEDD2;
 }
 
 .menu_item_img {
-  width: 260px;
-  height: 260px;
-  background-color: transparent;
+width: 260px;
+height: 250px;
+background-color: #0a1a143d;
 }
+  
