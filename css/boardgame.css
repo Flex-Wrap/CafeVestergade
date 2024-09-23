@@ -2,8 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     background-color: #265847;
+}
+
+main {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1 {
@@ -39,55 +44,6 @@ p {
     color: #f5f5dc; /* Beige color for headlines */
     text-align: center; /* Center headline text */
     font-size: 18px; /* Adjust font size */
-}
-
-/* Navigation bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-}
-
-.brand-logo img {
-    height: 40px;
-}
-
-.navbar-links ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.navbar-links ul li {
-    display: inline;
-}
-
-.navbar-links ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.navbar-links.active {
-    display: block;
-}
-
-.toggle-button {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 21px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
 }
 
 .box-text p {
