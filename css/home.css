@@ -81,7 +81,7 @@ section:not(.story, .hero) {
 #roundbutton {
   height: 60px;
   width: 60px;
-  background-color: var(--primary-color);
+  background-color: #112820;
   border-radius: 100%;
   position: absolute;
   bottom: -30px;
@@ -94,6 +94,39 @@ section:not(.story, .hero) {
 /*Hero screen end*/
 
 /*Soon events screen*/
+
+.soon_events div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.event_card {
+  width: 100%;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 480px) {
+  .event_card {
+    max-width: 390px; /* Single card per row on mobile */
+  }
+}
+
+.event_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-family: "El Messiri", sans-serif;
+  z-index: 2;
+  backdrop-filter: brightness(0.5);
+  padding: 4px 8px;
+}
 
 .soon_events button {
   font-size: 16px;
@@ -115,12 +148,13 @@ section:not(.story, .hero) {
   height: 262px;
   width: 100%;
   display: block;
-  padding-top: 24px;
+  padding-top: 16px;
+  object-fit: cover;
 }
 
 .event_date {
   position: absolute;
-  top: 24px;
+  top: 16px;
   left: 12px;
   background-color: var(--event-bg-color);
   color: var(--button-border-color);
@@ -173,6 +207,10 @@ section:not(.story, .hero) {
 
 .favourites h2 {
   margin-bottom: 24px;
+}
+
+.favourites h3 {
+  font-weight: 300;
 }
 
 /* Navbar Styles */
@@ -335,19 +373,22 @@ section:not(.story, .hero) {
 
 .carousel_slide img {
   width: 100%;
-  height: 291px; /* Set a height for the images */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  height: 291px;
+  object-fit: cover;
 }
 
-/* Show the first slide */
 .carousel_slide.active {
   display: block;
+}
+
+.story_content p {
+  margin: 0 20px;
 }
 
 /* Dots */
 .carousel_dots {
   position: absolute;
-  bottom: 20px; /* Position the dots 20px from the bottom of the image */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -370,4 +411,29 @@ section:not(.story, .hero) {
   height: 16px;
   width: 16px;
   margin: 0 8px;
+}
+
+/* Bottom section styling */
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.square {
+  width: 50vw;
+  height: 190px;
+}
+
+/* Responsive Design - Stacks boxes on smaller screens */
+@media (max-width: 768px) {
+  .square {
+    width: 100%; /* On smaller screens, squares take full width */
+  }
+}
+
+/* Facebook container styling */
+#facebook-container img {
+  object-fit: contain;
 }
