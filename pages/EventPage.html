@@ -4,7 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <link rel="stylesheet" href="../css/events.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
+    <header>
+        <!--nav bar start (add javascript link on each page)-->
+        <nav class="navbar">
+          <div class="brand-logo">
+            <a href="index.html">
+              <img src="../resources/cafe vestergade_logo_no numbers_cream.png" alt="logo">
+            </a>
+          </div>
+          <div class="language-selector">
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+            <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links" id="navbarLinks">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="pages/MenuPage.html">Menu</a></li>
+                  <li><a href="pages/EventPage.html">Events</a></li>
+                  <li><a href="pages/BoardgamePage.html">Boardgames</a></li>
+              
+                </ul>
+            </div>
+        </nav>
+        <!--nav bar end-->
+      </header>
+      <script src="javascript.js"></script>
+<div class="content">
+    <h1>March 17</h1>
+      <div class="box">
+        <img src="../resources/cafe vestergade_logo_no numbers_cream.png" alt="Description" class="box-image">
+        <div class="box-text">
+            <h2>Boardgame Night</h2>
+            <p>Join us this Tuesday as we try out some new boardgames! Grab your friends and family and roll the dice with us. Discover new games or revisit classics in a cosy atmosphere.</p>
+        </div>
+    </div>
+    <div class="box">
+        <img src="../resources/cafe vestergade_logo_no numbers_cream.png" alt="Description" class="box-image">
+        <div class="box-text">
+            <h2>Boardgame Night</h2>
+            <p>Join us this Tuesday as we try out some new boardgames! Grab your friends and family and roll the dice with us. Discover new games or revisit classics in a cosy atmosphere.</p>
+        </div>
+    </div>
+    <h1>March 20</h1>
+    <div class="box">
+        <img src="../resources/cafe vestergade_logo_no numbers_cream.png" alt="Description" class="box-image">
+        <div class="box-text">
+            <h2>Boardgame Night</h2>
+            <p>Join us this Tuesday as we try out some new boardgames! Grab your friends and family and roll the dice with us. Discover new games or revisit classics in a cosy atmosphere.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
