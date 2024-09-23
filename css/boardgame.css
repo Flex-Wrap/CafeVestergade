@@ -76,32 +76,3 @@ p {
         color: #f5f5dc; /* Beige color for headlines */
     }
 }
-
-footer {
-    background-color: #000;
-    color: #fff;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-logo {
-    width: 80%;
-    height: auto;
-}
-
-.opening-hours h3, .contact-us h3, .footer-right h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.opening-hours p, .contact-us p {
-    font-size: 18px;
-    color: #d7c69a;
-    line-height: 1.5;
-}
