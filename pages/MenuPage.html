@@ -2,10 +2,183 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Vestergade Drink Menu. Lots of choices!">
+    <title>Cafe Vestergade Menu</title>
 </head>
-<body>
-    
+<body class="body">
+    <header>
+      <!--nav bar start (add javascript link on each page)-->
+      <nav class="navbar">
+        <div class="brand-logo">
+          <a href="index.html">
+            <img src="resources/cafe vestergade_logo_no numbers_cream.png" alt="logo">
+          </a>
+        </div>
+        <div class="language-selector">
+          <select id="language" onchange="changeLanguage()">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+          </select>
+      </div>
+          <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+          <div class="navbar-links" id="navbarLinks">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/MenuPage.html">Menu</a></li>
+                <li><a href="pages/EventPage.html">Events</a></li>
+                <li><a href="pages/BoardgamePage.html">Boardgames</a></li>
+
+              </ul>
+          </div>
+      </nav>
+      <!--nav bar end-->
+    </header>
+    <main>
+        <section class="td-special-container">
+            <h1>Today's Special</h1>
+            <div class="td-special-box">
+                <h2>Pumpkin spice whiskey</h2>
+                <h3>40-</h3>
+                <p>Ingredients: Jack Daniels whiskey, cinnamon, ginger, nutmeg, allspice</p>
+            </div>
+        </section>
+        <section class="menu-section">
+            <section class="menu-elements">
+                <div class="section-name-box">
+                    <h4>Coffee</h4>
+                </div>
+                <img src="../resources/coffee.jpg" class="drink-image" alt="Coffee"></img>
+                <div class="line"></div>
+            </section>
+            <ul class="drinks">
+                <li>Cappuccino</li>
+                <li>Americano</li>
+                <li>Cafe Latte</li>
+                <li>Espresso</li>
+                <li>Chai Latte</li>
+            </ul>
+            <ul class="price">
+                <li>30-</li>
+                <li>25-</li>
+                <li>35-</li>
+                <li>25-</li>
+                <li>40-</li>
+            </ul>
+        </section>
+        <section class="croissant-container">
+            <div class="croissant-box"></div>
+            <h1>Try our fresh <br> croissants for just 20-</h1>
+            <img src="../resources/croissant.jpg" class="croissant-img" alt="croissants">
+        </section>
+        <section class="menu-section">
+            <section class="menu-elements">
+                <div class="section-name-box-reverse">
+                    <h4>Beer</h4>
+                </div>
+                <img src="../resources/beer.jpg" class="drink-image-reverse" alt="Beer"></img>
+                <div class="line-reverse"></div>
+            </section>
+            <ul class="drinks-reverse">
+                <li>Ceres Top</li>
+                <li>Carlsberg</li>
+                <li>Tuborg</li>
+                <li>Ginger beer</li>
+                <li>Pilsner</li>
+            </ul>
+            <ul class="price-reverse">
+                <li>25-</li>
+                <li>30-</li>
+                <li>35-</li>
+                <li>50-</li>
+                <li>30-</li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <section class="menu-elements">
+                <div class="section-name-box">
+                    <h4 class="text-too-big">Soft drinks</h4>
+                </div>
+                <img src="../resources/water.jpg" class="drink-image" alt="Glass of water"></img>
+                <div class="line"></div>
+            </section>
+            <ul class="drinks">
+                <li>Water</li>
+                <li>Coca-Cola</li>
+                <li>Faxe Kondi</li>
+                <li>Lipton</li>
+                <li>Natural juice</li>
+            </ul>
+            <ul class="price">
+                <li>12-</li>
+                <li>15-</li>
+                <li>15-</li>
+                <li>18-</li>
+                <li>40-</li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <section class="menu-elements">
+                <div class="section-name-box-reverse">
+                    <h4>Cocktails</h4>
+                </div>
+                <img src="../resources/cocktail.jpg" class="drink-image-reverse" alt="Cocktail"></img>
+                <div class="line-reverse"></div>
+            </section>
+            <ul class="drinks-reverse">
+                <li>Mojito</li>
+                <li>Old Fashioned</li>
+                <li>Pina Colada</li>
+                <li>Tequila sunrise</li>
+                <li>Shots</li>
+            </ul>
+            <ul class="price-reverse">
+                <li>80-</li>
+                <li>60-</li>
+                <li>95-</li>
+                <li>75-</li>
+                <li>30-</li>
+            </ul>
+        </section>
+        <section class="menu-section">
+            <section class="menu-elements">
+                <div class="section-name-box">
+                    <h4 class="text-too-big">Wine</h4>
+                </div>
+                <img src="../resources/wine.jpg" class="drink-image" alt="Wine"></img>
+                <div class="line"></div>
+            </section>
+            <ul class="drinks">
+                <li>Cabernet</li>
+                <li>Merlot</li>
+                <li>Airén</li>
+                <li>Chardonnay</li>
+                <li>Moët</li>
+            </ul>
+            <ul class="price">
+                <li>50-</li>
+                <li>40-</li>
+                <li>80-</li>
+                <li>100-</li>
+                <li>300-</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
