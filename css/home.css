@@ -25,15 +25,17 @@ body {
 h2 {
   font-family: "El Messiri", sans-serif;
   color: var(--secondary-color);
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 h1 {
   font-family: "El Messiri", sans-serif;
+  font-size: 1.6rem;
 }
 
 p {
   color: var(--text-color);
+  font-size: 1rem;
 }
 
 section:not(.story, .hero) {
@@ -70,7 +72,7 @@ section:not(.story, .hero) {
 }
 
 #hero_screen button:not(#roundbutton) {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 8px 24px;
   background-color: var(--button-bg-color);
   border-radius: 100px;
@@ -85,7 +87,7 @@ section:not(.story, .hero) {
   border-radius: 100%;
   position: absolute;
   bottom: -30px;
-  font-size: 42px;
+  font-size: 1.5rem;
   color: var(--secondary-color);
   text-align: center;
   box-shadow: none;
@@ -121,7 +123,7 @@ section:not(.story, .hero) {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 20px;
+  font-size: 1.4rem;
   font-family: "El Messiri", sans-serif;
   z-index: 2;
   backdrop-filter: brightness(0.5);
@@ -445,7 +447,7 @@ section:not(.story, .hero) {
   object-fit: cover;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .square {
     width: 50vw;
     height: 250px;
