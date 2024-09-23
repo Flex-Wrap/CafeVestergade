@@ -426,14 +426,20 @@ section:not(.story, .hero) {
   height: 190px;
 }
 
-/* Responsive Design - Stacks boxes on smaller screens */
-@media (max-width: 768px) {
-  .square {
-    width: 100%; /* On smaller screens, squares take full width */
-  }
-}
-
 /* Facebook container styling */
 #facebook-container img {
-  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media(min-width: 768px) {
+  .square {
+    width: 50vw;
+    height: 250px;
+  }
+
+  .carousel_slide img {
+    height: 360px;
+  }
 }
