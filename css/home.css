@@ -95,6 +95,39 @@ section:not(.story, .hero) {
 
 /*Soon events screen*/
 
+.soon_events div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.event_card {
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 480px) {
+  .event_card {
+    max-width: 480px; /* Single card per row on mobile */
+  }
+}
+
+.event_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-family: "El Messiri", sans-serif;
+  z-index: 2;
+  padding: 8px 8px;
+  border-radius: 100px;
+}
+
 .soon_events button {
   font-size: 16px;
   padding: 8px 16px;
@@ -115,12 +148,13 @@ section:not(.story, .hero) {
   height: 262px;
   width: 100%;
   display: block;
-  padding-top: 24px;
+  padding-top: 16px;
+  object-fit: cover;
 }
 
 .event_date {
   position: absolute;
-  top: 24px;
+  top: 16px;
   left: 12px;
   background-color: var(--event-bg-color);
   color: var(--button-border-color);
