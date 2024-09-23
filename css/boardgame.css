@@ -90,6 +90,11 @@ p {
     border-radius: 5px;
 }
 
+.box-text p {
+    margin: 0; 
+    font-size: 1rem;
+    line-height: 1.5; 
+}
 
 /* For larger screens */
 @media (min-width: 768px) {
