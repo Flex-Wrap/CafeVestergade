@@ -1,93 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boardgames</title>
-    <link rel="stylesheet" href="../css/boardgame.css"/>
+    <link rel="stylesheet" href="../css/boardgame.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/navbar.css"/>
-
-
-</head>
-<body>
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
+  <body>
     <header>
-        <!--nav bar start (add javascript link on each page)-->
-        <nav class="navbar">
-          <div class="brand-logo">
-            <a href="index.html">
-              <img src="../resources/cafe vestergade_logo_no numbers_cream.png" alt="logo">
-            </a>
-          </div>
-          <div class="language-selector">
-            <select id="language" onchange="changeLanguage()">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-            </select>
+      <!--nav bar start (add javascript link on each page)-->
+      <nav class="navbar">
+        <div class="brand-logo">
+          <a href="index.html">
+            <img
+              src="../resources/cafe vestergade_logo_no numbers_cream.png"
+              alt="logo"
+            />
+          </a>
         </div>
-            <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links" id="navbarLinks">
-                <ul>
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../pages/MenuPage.html">Menu</a></li>
-                  <li><a href="../pages/EventPage.html">Events</a></li>
-                  <li><a href="../pages/BoardgamePage.html">Boardgames</a></li>
-              
-                </ul>
-            </div>
-        </nav>
-        <!--nav bar end-->
-      </header>
+        <div class="language-selector">
+          <select id="language" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
+        <a
+          href="javascript:void(0);"
+          class="toggle-button"
+          onclick="toggleMenu()"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbarLinks">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/MenuPage.html">Menu</a></li>
+            <li><a href="../pages/EventPage.html">Events</a></li>
+            <li><a href="../pages/BoardgamePage.html">Boardgames</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--nav bar end-->
+    </header>
     <main>
-        <h1>Board Games We Offer at the Caffe</h1>
-    
-        <div class="box-text">
-        <p>Here is our selected games to make your visit more social if you wish so. Feel free to grab the games from the bar.</p> 
+      <h1>Board Games We Offer at the Caffe</h1>
+
+      <div class="box-text">
+        <p>
+          Here is our selected games to make your visit more social if you wish
+          so. Feel free to grab the games from the bar.
+        </p>
+      </div>
+
+      <div class="flex-container">
+        <div class="video-section">
+          <iframe
+            src="https://www.youtube.com/embed/Uyciy8LmmXg"
+            allowfullscreen
+          ></iframe>
+          <div class="headline">Cards Against Humanity: 3-8 players</div>
         </div>
 
-        <div class="flex-container">
-            <div class="video-section">
-                <iframe src="https://www.youtube.com/embed/Uyciy8LmmXg" allowfullscreen></iframe>
-                <div class="headline">Cards Against Humanity: 3-8 players</div>
-            </div> 
+        <div class="video-section">
+          <iframe
+            src="https://www.youtube.com/embed/2QZZbN4AbLI"
+            allowfullscreen
+          ></iframe>
+          <div class="headline">Meier: 2-14 players</div>
+        </div>
 
         <div class="video-section">
-                    <iframe src="https://www.youtube.com/embed/2QZZbN4AbLI" allowfullscreen></iframe>
-                    <div class="headline">Meier: 2-14 players</div>
-                </div> 
-                
-        <div class="video-section">
-                    <iframe src="https://www.youtube.com/embed/8TfDH0Rnpyc" allowfullscreen></iframe>
-                    <div class="headline">Dobble: 2-14 players</div>
-                </div>
-                
-        <div class="video-section">
-                    <iframe src="https://www.youtube.com/embed/sWoSZmHsCls" allowfullscreen></iframe>
-                    <div class="headline">Uno: 2-8 players</div>
-                </div>
+          <iframe
+            src="https://www.youtube.com/embed/8TfDH0Rnpyc"
+            allowfullscreen
+          ></iframe>
+          <div class="headline">Dobble: 2-14 players</div>
         </div>
+
+        <div class="video-section">
+          <iframe
+            src="https://www.youtube.com/embed/sWoSZmHsCls"
+            allowfullscreen
+          ></iframe>
+          <div class="headline">Uno: 2-8 players</div>
+        </div>
+      </div>
     </main>
     <footer>
-        <div class="footer-container">
-            <img src="../resources/cafe vestergade_logo_no numbers_cream.png" alt="Cafe VesterGade" class="footer-logo">
-            <div class="opening-hours">
-                <h3>Opening hours</h3>
-                <p>Sun - Tue <br> 11.30 - 12.00</p>
-                <p>Wed - Thu <br> 11.30 - 2.00</p>
-                <p>Fri - Sat <br> 11.30 - 3.00</p>
-            </div>
-            <div class="contact-us">
-                <h3>Contact us</h3>
-                <p>+91-xx-xx-xxxx</p>
-                <p>cafe.vestergade42@gmail.com</p>
-            </div>
+      <div class="footer-container">
+        <img
+          src="../resources/cafe vestergade_logo_no numbers_cream.png"
+          alt="Cafe VesterGade"
+          class="footer-logo"
+        />
+        <div class="opening-hours">
+          <h3>Opening hours</h3>
+          <p>
+            Sun - Tue <br />
+            11.30 - 12.00
+          </p>
+          <p>
+            Wed - Thu <br />
+            11.30 - 2.00
+          </p>
+          <p>
+            Fri - Sat <br />
+            11.30 - 3.00
+          </p>
         </div>
+        <div class="contact-us">
+          <h3>Contact us</h3>
+          <p>+91-xx-xx-xxxx</p>
+          <p>cafe.vestergade42@gmail.com</p>
+        </div>
+      </div>
     </footer>
-  <script src="../javascript.js"></script>
-    </body>
+    <script src="../javascript.js"></script>
+  </body>
 </html>
