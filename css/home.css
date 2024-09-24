@@ -316,4 +316,8 @@ section:not(.story, .hero) {
   .carousel_slide img {
     height: 420px;
   }
+
+  html {
+    font-size: 20px;
+  }
 }
